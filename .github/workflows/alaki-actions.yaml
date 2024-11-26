@@ -1,0 +1,10 @@
+name: Testing custom runner
+
+on: push
+
+jobs:
+  alaki-job:
+    runs-on: self-hosted
+    steps:
+      - run: echo 'hello Ali Joon'
+      - run: echo $HOSTNAME
